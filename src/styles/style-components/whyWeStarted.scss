@@ -1,0 +1,50 @@
+@import 'variables';
+
+
+
+.whyWe__block{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+
+    img{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        
+    }
+}
+
+.whyWe__img__text{
+    margin-top: 7.5625rem;
+    background-color: var(--white);
+    padding: 5rem;
+    z-index: 5;
+    text-align: center;
+
+    h4{
+        color: var(--black);
+        font-weight: 500;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding-bottom: 1.5rem;
+    }
+    
+    h2{
+        max-width: 598px;
+        font-family: $sen-font;
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    
+    p{
+        max-width: 546px;
+        font-weight: 400;
+        color: var(--medium-gray);
+        line-height: 1.75rem;
+        padding-bottom: 2rem;
+    }
+}

@@ -1,0 +1,106 @@
+@import 'variables';
+
+.posts{
+    background-color: var(--white);
+    .wrapper{
+        padding: 0 80px;
+    }
+}
+
+.posts__block{
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 0;
+
+    .posts__featured{
+
+        h2{ 
+            font-size: 2.25rem;
+            color: var(--dark);
+            padding-bottom: 2rem;
+            font-family: $sen-font;
+        }
+        &__block{
+            padding: 2rem;
+            outline: 1px solid var(--medium-gray);
+
+            .posts__all__item{
+
+                padding: 2rem 0 1rem 0;
+                background-color: transparent;
+            }
+        }
+
+
+        .posts__featured__block__article{
+
+            h3{
+                font-size: 1.75rem;
+                font-family: $sen-font;
+                letter-spacing: -1px;
+                line-height: 40px;
+                max-width: 669px;
+            }
+
+            p{
+                padding: 1rem 0;
+                font-size: 1rem;
+                color: var(--medium-gray);
+                max-width: 551px;
+            }
+
+        }
+    }
+
+    .posts__all{
+
+        .posts__all__ahead{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 2rem;
+            
+            h2{
+                font-size: 2.25rem;
+                color: var(--dark);
+                font-family: $sen-font;
+            }
+
+            a{
+                align-self: flex-end;
+                font-size: 1rem;
+                color: var(--purple);
+            }
+        }
+
+        .posts__all__content{
+            font-family: $sen-font;
+            font-size: 1.5rem;
+            max-width: 369px;
+            line-height: 2rem;
+        }
+    }
+
+}
+
+
+.posts__all__item{
+
+    padding: 2rem;
+
+    .posts__all__data{
+        padding-bottom: 0.5rem;
+
+        a{
+            color: var(--purple);
+
+            &:hover{
+                color: var(--dark);
+            }
+        }
+    }
+
+    &:hover{
+        cursor: pointer;
+        background-color: var(--light-yellow);
+    }
+}

@@ -1,0 +1,26 @@
+@import 'variables';
+
+.joinUs__block{
+    text-align: center;
+
+    h2{
+        font-size: $sz-big;
+        font-family: $sen-font;
+        letter-spacing: -2px;
+        line-height: $l-h--standart;
+        max-width: 414px;
+        margin: 0 auto;
+    }
+
+    p{
+        padding: 1rem 0 3rem 0;
+        color: var(--medium-gray);
+        line-height: $l-h--small;
+        max-width: 405px;
+        margin: 0 auto;
+    }
+
+    a{
+        color: var(--dark);
+    }
+}

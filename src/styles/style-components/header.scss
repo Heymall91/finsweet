@@ -1,0 +1,43 @@
+@mixin flexDis(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+header{
+    z-index: 10;
+    background-color: var(--dark);
+}
+
+.header__logo{
+    @include logoSize;
+    z-index: 20;
+}
+
+.header__block{
+    @include flexDis;
+    color: var(--white);
+    position: relative;
+}
+
+.header__ul{
+    display: flex;
+    gap: 24px;
+}
+
+a{
+    font-size: 16px;
+}
+
+.header__ul__btn{
+    @include flexDis();
+    gap: 32px;
+}
+
+
+.burger__block{
+    display: none;
+}

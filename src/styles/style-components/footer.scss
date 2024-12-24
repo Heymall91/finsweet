@@ -1,0 +1,116 @@
+@import 'variables';
+
+
+
+footer{
+
+    margin-top: $pad-small;
+    background-color: var(--dark-gray);
+
+    .footer__block__ahead{
+        @include flexDis;
+
+        padding-bottom: 3.521875rem;
+    }
+
+    .footer__logo{
+        @include logoSize;
+    }
+
+    .footer__block{
+
+        color: var(--white);
+
+        .footer__ul__btn{
+            @include flexDis();
+            gap: 32px;
+        }
+    
+        .footer__ul{
+            display: flex;
+            gap: 24px;
+        }
+    
+        a{
+            font-size: 16px;
+        }
+
+
+        .footer__form{
+            display: flex;
+            justify-content: space-between;
+
+            background-color: var(--medium-gray-opac);
+            padding: $pad-stdt $pad-small;
+            margin-bottom: $pad-mini;
+
+            h2{
+                max-width: 562px;
+                font-size: $sz-big;
+                font-family: $sen-font;
+                letter-spacing: -2px;
+                line-height: $l-h--standart;
+            }
+
+
+            .form__block{
+                display: flex;
+                align-items: center;
+
+
+                #user__email{
+                    background-color: transparent;
+                    outline: 1px solid var(--medium-gray);
+                    font-size: 1rem;
+                    color: var(--medium-gray);
+                    border: none;
+                    height: 52px;
+                    min-width: 323px;
+                    caret-color: var(--medium-gray);
+                    padding-left: 25px;
+    
+                    &::placeholder{
+                        font-size: 1rem;
+                    }
+    
+                    &:focus{
+                        outline: 1px solid var(--medium-gray);
+                        color: var(--medium-gray);
+                    }
+                }
+            }
+
+        }
+
+        .footer__links{
+            display: flex;
+            justify-content: space-between;
+
+            .footer__links__des{
+                max-width: 361px;
+
+                p{
+                    margin-bottom: 4px;
+                }
+
+                a, p{
+                    color: var(--medium-gray);
+                }
+
+                a:hover{
+                    color: var(--light-gray);
+                }
+            }
+
+            .footer__soc__net{
+                display: flex;
+                gap: 1.666rem;
+
+                a:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+}

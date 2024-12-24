@@ -1,0 +1,139 @@
+@import 'variables';
+
+
+@import './style-components/header.scss';
+@import './style-components/intro.scss';
+@import './style-components/posts.scss';
+@import './style-components/aboutUs.scss';
+@import './style-components/category.scss';
+@import './style-components/whyWeStarted.scss';
+@import './style-components/authors.scss';
+@import './style-components/featuredIn.scss';
+@import './style-components/reviews.scss';
+@import './style-components/joinUs.scss';
+@import './style-components/footer.scss';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: 0.4s ease;
+}
+
+
+// wrappers
+
+
+.wrapper__header{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 25px 80px;
+}
+
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 64px 80px;
+}
+
+// general links
+
+a{
+    color: var(--white);
+}
+
+// header-footer links
+
+.header__ul, .footer__ul{
+    display: flex;
+    gap: 24px;
+
+    a{
+        font-size: 1rem;
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            left: -100%;
+            width: 100%;
+            height: 1px;
+            background-color: var(--white);
+            opacity: 0;
+            transition: 0.4s ease-in-out;
+        }
+    
+        &:hover{
+            &::before{
+                left: 0;
+                opacity: 1;
+            }
+        
+        }
+    }
+}
+
+
+// buttons styles
+
+
+
+.btn{
+    padding: 1rem $l-h--standart;
+    font-weight: 600;
+    font-family: $sen-font;
+    font-size: $sz-btn;
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+        outline: 1px solid var(--yellow);
+        background-color: transparent;
+        color: var(--yellow);
+    }
+}
+
+.common{
+    background-color: var(--white);
+}
+
+.yellow{
+    background-color: var(--yellow);
+}
+
+
+/* scrollTop */
+
+
+#scroll-btn {
+    opacity: 0;
+    width: 60px;
+    aspect-ratio: 1;
+    background-color: var(--yellow);
+    color: var(--white);
+    position: fixed;
+    bottom: 20%;
+    right: 12%;
+    border: 2px solid var(--light-gray);
+    border-radius: 50%;
+    font: bold 40px monospace;
+    transition: opacity 0.5s, transform 0.5s;
+    z-index: 10;
+    cursor: pointer;
+
+    &:hover{
+        scale: 1.08;
+    }
+
+}
+
+#scroll-btn.show {
+    opacity: 1;
+    transition: opacity 1s, transform 1s;
+}

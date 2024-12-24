@@ -1,0 +1,69 @@
+@import 'variables';
+
+
+
+.about__us__colored{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    height: 23px;
+    width: 100%;
+    
+    .yellow{
+        background-color: var(--yellow);
+    }
+
+    .purple{
+        background-color: var(--purple);
+    }
+}
+
+.about__us__block{
+    background-color: var(--lavender);
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 6rem;
+
+    .about__us__des{
+
+        h4{
+            color: var(--black);
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding-bottom: 1.5rem;
+        }
+
+        h2{
+            max-width: 550px;
+            color: var(--black);
+            font-size: 2.25rem;
+            font-family: $sen-font;
+            line-height: 48px;
+            padding-bottom: 1.5rem;
+        }
+
+        .hTwoLess{
+            max-width: 512px;
+            font-size: 1.75rem;
+        }
+
+        .about__us__text{
+            max-width: 512px;
+            font-weight: 400;
+            color: var(--medium-gray);
+            line-height: 1.75rem;
+            padding-bottom: 1rem;
+        }
+
+        a{
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--purple);
+
+
+            &:hover{
+                color: var(--medium-gray);
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+:root{
+    --dark: #232536;
+    --dark-gray: #393B4A;
+    --purple: #592EA9;
+    --white: #fff;
+    --lavender: #F4F0F8;
+    --light-gray: #F4F4F4;
+    --light-yellow: #FBF6EA;
+    --yellow: #FFD050;
+    --medium-gray: #6D6E76;
+    --medium-gray-opac: #6d6e7638;
+}
+
+// mixins
+
+@mixin logoSize{
+    font-size: $sz-mb;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@mixin flex-column{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+// fonts
+
+$sen-font: "Sen", sans-serif;
+
+// line-height
+$l-h--standart: 3rem; // 48px
+$l-h--small: 1.75rem; // 28px
+
+// font size
+$sz-btn: 1.125rem; // 18px
+$sz-medium: 1.5rem; // 24px
+$sz-mb: 1.875rem; // 30px
+$sz-big: 2.25rem; // 36px
+
+
+// padding
+
+$pad-large: 7rem; //112px
+$pad-stdt: 5rem; //80px
+$pad-small: 4rem; //64px
+$pad-mini: 3rem; // 48px
